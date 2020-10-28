@@ -5,3 +5,5 @@ that’s correct. It’s very hard to replicate this issue as it doesn’t happe
 grep -rnw /var/lib/dhcp/dhcpd.leases -e a8:bd:27:c7:46:6e
 
 sudo tcpdump -i ens3.110 -vvv ether host a8:bd:27:c7:46:6e
+
+https://www.notion.so/Clarizen-Wiki-d8b52dfe01564839803d584f2c47117e
