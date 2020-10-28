@@ -3,3 +3,5 @@ that’s correct. It’s very hard to replicate this issue as it doesn’t happe
 /root/bin/github_pull.sh on 10.65.57.110 to make change come effect immediately.  "./github_sh"
 
 grep -rnw /var/lib/dhcp/dhcpd.leases -e a8:bd:27:c7:46:6e
+
+sudo tcpdump -i ens3.110 -vvv ether host a8:bd:27:c7:46:6e
