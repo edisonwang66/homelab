@@ -16,6 +16,10 @@ clothingBtn.onClick((event) => {
   // The code below hides the button
   clothingBtn.hide();
 });
+$w.onReady(function () {
+  const clothingBtn = $w('#clothingButton');
+  clothingBtn.show();
+});
 
 $w.onReady(function () {
   const clothingBtn = $w('#clothingButton');
