@@ -34,3 +34,11 @@ $w.onReady(function () {
     clothingBtn.hide('fade', fadeOptions);
   });
 });
+
+.hide() to hide Wix elements
+.show() to show Wix elements
+.onClick() to listen for clicks on a mouse
+.onMouseIn() to listen for a mouse pointer entering an element
+.onMouseOut() to listen for a mouse pointer leaving an element
+.onDblClick(), a method that listens for double clicks on any element.
+.scrollTo() , a method that adds animation to scroll to an element.
