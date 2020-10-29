@@ -16,3 +16,17 @@ clothingBtn.onClick((event) => {
   // The code below hides the button
   clothingBtn.hide();
 });
+
+$w.onReady(function () {
+  const clothingBtn = $w('#clothingButton');
+
+  clothingBtn.onClick( (event) => {
+    // The code below fades out the button
+    const fadeOptions = {
+      duration: 1000,  // how long to play the animation in milliseconds
+      delay: 250  // how long to wait before playing the animation in milliseconds
+    };
+
+    clothingBtn.hide('fade', fadeOptions);
+  });
+});
