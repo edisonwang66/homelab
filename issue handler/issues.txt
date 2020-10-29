@@ -9,3 +9,10 @@ sudo tcpdump -i ens3.110 -vvv ether host a8:bd:27:c7:46:6e
 https://www.notion.so/Clarizen-Wiki-d8b52dfe01564839803d584f2c47117e
 
 const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+
+const clothingBtn = $w('#clothingButton');
+
+clothingBtn.onClick((event) => {
+  // The code below hides the button
+  clothingBtn.hide();
+});
