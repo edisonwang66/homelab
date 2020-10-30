@@ -42,3 +42,7 @@ $w.onReady(function () {
 .onMouseOut() to listen for a mouse pointer leaving an element
 .onDblClick(), a method that listens for double clicks on any element.
 .scrollTo() , a method that adds animation to scroll to an element.
+
+
+
+developer.mozilla.org
