@@ -48,3 +48,22 @@ $w.onReady(function () {
 developer.mozilla.org
 
 currentCard = cards[Math.floor(Math.random() * 4)];   Math.floor(Math.random() * 4) will give us a random number from 0 to 3. 
+
+
+JS Asynchronous
+const executorFunction = (resolve, reject) => {
+  if (someCondition) {
+      resolve('I resolved!');
+  } else {
+      reject('I rejected!'); 
+  }
+}
+const myFirstPromise = new Promise(executorFunction);
+
+Let’s break down what’s happening above:
+
+We declare a variable myFirstPromise
+myFirstPromise is constructed using new Promise() which is the Promise constructor method.
+executorFunction() is passed to the constructor and has two functions as parameters: resolve and reject.
+If someCondition evaluates to true, we invoke resolve() with the string 'I resolved!'
+If not, we invoke reject() with the string 'I rejected!'
