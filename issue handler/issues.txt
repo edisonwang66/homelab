@@ -11,6 +11,7 @@ https://www.notion.so/Clarizen-Wiki-d8b52dfe01564839803d584f2c47117e
 Hi Max.  Please open a ticket  under "General" in our catalog and we'll gather some additional info.
 https://helpdesk.shopify.io/support/catalog/items?category_id=11000022723
 
+apt autoremove --purge
 
 const plantNeedsWater = day => day === 'Wednesday' ? true : false;
 
