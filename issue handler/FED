@@ -1,0 +1,73 @@
+A Note on JavaScript Frameworks
+Many front-end job postings will add the requirement of knowing a popular JS framework, such as Angular (slightly outdated), React, or Vue. I’m not arguing that you shouldn’t learn a framework, or library, however I caution you to learn the basics of JavaScript prior to diving into these.
+I got my current job by completing a take-home assessment only using “vanilla” (no framework) JavaScript. So while the ability to work with these popular libraries is an important skill to have, deep JavaScript knowledge is much more valuable in the long-run.
+Where Do I Start?
+Front-end development can be overwhelming when you’re starting out. So I’ve outlined a path to get started that I hope can help remove some of that angst.
+Learn about the web
+Learn HTML
+Understand the DOM
+Learn CSS
+Learn JavaScript
+Learn JSON, APIs, & REST/GraphQL
+Learn the CLI
+Learn workflow tools
+Learn Node.js
+Learn About UX & Design
+FAQ
+Below are some questions I had when I started learning front-end development. If you have more questions, feel free to leave them below!
+Do I need to know back-end development to make a website?
+No! Unless you want to make a fully-functioning, scalable (client-facing) web application, you do not need to have a database. When I need data, I either grab a free API, or use a JSON file for my data.
+Won’t this take a lot of time to learn?
+Yes, but it’s an ongoing process and you should always keep learning.
+What is JavaScript vs. ES6 vs. ES2015?
+They’re all the same thing. ES stands for ECMAScript, which is the scripting language specification. You can use these interchangeably (although the version number will change as new JS versions are released).
+How can I pass a technical interview?
+There are a ton of resources to help you with technical interviews. I’ll list a few of my favorites below.
+How can I find a front-end job?
+There are a ton of ways to find front-end jobs. I’ll link a few of my favorites below.
+Do I need to learn a framework/library?
+See my note above about frameworks and libraries.
+Which framework/library should I learn?
+Check out this post about popular JS frameworks. I’d recommend React (with Redux) for now!
+Which IDE is right for me?
+There are many popular front-end development environments. Some of my favorites are Atom, Sublime, and of course VisualStudio Code. But paid IDEs like Webstorm are also powerful.
+Do I need to know how to write an API?
+You should learn this, but not in the beginning of your FED journey.
+How do I get my website online?
+I’ll be writing another post about getting your website online, but for now, check out this post. You’ll need a domain name, a host, and an FTP client.
+Do I need to make a mobile app for my website?
+Yes, since the majority of websites are accessed on mobile devices, however you can make your site responsive with media queries, or use progressive web apps to do this.
+How Can I Learn FED?
+Online Tutorials
+Front-end Masters ($)
+Lynda ($)
+Coursera ($$)
+Level Up Tutorials
+Traversty Media
+CodeAcademy
+Blogs
+CSS Tricks
+JavaScript Weekly
+CSS Weekly
+Books
+You Don’t Know JS
+Front-end Developer Handbook
+Eloquent JavaScript
+JavaScript: The Good Parts ($)
+JavaScript Allongee
+Technical Interviews
+Cracking The Coding Interview 5th Edition (this is outdated, but a free PDF)
+Cracking The Coding Interview 6th Edition ($)
+Coderbyte
+CodeFights
+HackerRank
+Front-end Interview Handbook
+Front-end Interview Questions
+Job Search
+LinkedIn
+Monster
+Indeed
+HiredcAlso check out the company’s website for open positions.
+Tools
+CodePen
+Code Sandbox
