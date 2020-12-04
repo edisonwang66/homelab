@@ -83,3 +83,148 @@ myFirstPromise is constructed using new Promise() which is the Promise construct
 executorFunction() is passed to the constructor and has two functions as parameters: resolve and reject.
 If someCondition evaluates to true, we invoke resolve() with the string 'I resolved!'
 If not, we invoke reject() with the string 'I rejected!'
+
+
+
+(mc00-tor0080) #show ap database long
+
+AP Database
+-----------
+Name                Group         AP Type  IP Address     Status               Flags  Switch IP     Standby IP  Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----                -----         -------  ----------     ------               -----  ---------     ----------  -----------------  --------    ----  ----  --------  ----
+70:3a:0e:ce:51:de   mc00-tor0080  335      10.90.105.12   Up 427d:18h:33m:13s         10.90.104.21  0.0.0.0     70:3a:0e:ce:51:de  CNC6J0Y09F  N/A   N/A   N/A       
+TOR0080-0200-05-44  mc00-tor0080  335      10.90.105.15   Up 427d:18h:32m:14s         10.90.104.21  0.0.0.0     90:4c:81:ce:47:8a  CNG8J0Y07P  N/A   N/A   N/A       
+TOR0080-0200-05-46  mc00-tor0080  335      10.90.105.39   Up 427d:18h:31m:34s         10.90.104.21  0.0.0.0     90:4c:81:ce:46:70  CNG8J0Y07T  N/A   N/A   N/A       
+TOR0080-0301-05-26  mc00-tor0080  335      10.90.105.30   Up 427d:18h:31m:52s         10.90.104.21  0.0.0.0     90:4c:81:ce:45:5e  CNG8J0Y03R  N/A   N/A   N/A       
+TOR0080-0302-05-24  mc00-tor0080  335      10.90.105.45   Up 427d:18h:32m:10s         10.90.104.21  0.0.0.0     90:4c:81:ce:38:04  CNG7J0Y1ZM  N/A   N/A   N/A       
+TOR0080-0310-05-28  mc00-tor0080  335      10.90.105.1    Up 427d:18h:33m:55s         10.90.104.21  0.0.0.0     90:4c:81:ce:42:9a  CNG8J0Y010  N/A   N/A   N/A       
+TOR0080-0312-05-47  mc00-tor0080  335      10.90.105.60   Up 427d:18h:32m:57s         10.90.104.21  0.0.0.0     90:4c:81:ce:37:fe  CNG7J0Y1VL  N/A   N/A   N/A       
+TOR0080-0313-05-36  mc00-tor0080  335      10.90.105.33   Up 427d:18h:32m:39s         10.90.104.21  0.0.0.0     90:4c:81:ce:33:d8  CNG7J0Y1W5  N/A   N/A   N/A       
+TOR0080-0325-05-30  mc00-tor0080  335      10.90.105.65   Up 427d:18h:33m:31s         10.90.104.21  0.0.0.0     90:4c:81:ce:42:30  CNG8J0Y029  N/A   N/A   N/A       
+TOR0080-0326-05-32  mc00-tor0080  335      10.90.105.2    Up 427d:18h:32m:50s         10.90.104.21  0.0.0.0     90:4c:81:ce:43:b8  CNG8J0Y00W  N/A   N/A   N/A       
+TOR0080-0332-05-38  mc00-tor0080  335      10.90.105.55   Up 427d:18h:32m:11s         10.90.104.21  0.0.0.0     90:4c:81:ce:43:f8  CNG8J0Y058  N/A   N/A   N/A       
+TOR0080-0334-05-40  mc00-tor0080  335      10.90.105.18   Up 427d:18h:32m:57s         10.90.104.21  0.0.0.0     90:4c:81:ce:33:1a  CNG7J0Y1VR  N/A   N/A   N/A       
+TOR0080-0338-05-22  mc00-tor0080  335      10.90.105.42   Up 427d:18h:34m:31s         10.90.104.21  0.0.0.0     90:4c:81:ce:38:30  CNG7J0Y1VD  N/A   N/A   N/A       
+TOR0080-0340-05-20  mc00-tor0080  335      10.90.105.69   Up 427d:18h:33m:0s          10.90.104.21  0.0.0.0     90:4c:81:ce:31:b8  CNG7J0Y1VY  N/A   N/A   N/A       
+TOR0080-0360-05-10  mc00-tor0080  335      10.90.105.3    Up 427d:18h:33m:20s         10.90.104.21  0.0.0.0     90:4c:81:ce:38:48  CNG7J0Y1W7  N/A   N/A   N/A       
+TOR0080-0374-05-14  mc00-tor0080  335      10.90.105.57   Up 427d:18h:30m:42s         10.90.104.21  0.0.0.0     a8:bd:27:c7:27:d4  CNDJJ0Y11D  N/A   N/A   N/A       
+TOR0080-0375-05-18  mc00-tor0080  335      10.90.105.67   Up 427d:18h:31m:6s          10.90.104.21  0.0.0.0     a8:bd:27:c7:20:8e  CNDJJ0Y02C  N/A   N/A   N/A       
+TOR0080-0376-05-06  mc00-tor0080  335      10.90.105.6    Up 427d:18h:32m:59s         10.90.104.21  0.0.0.0     90:4c:81:ce:31:4c  CNG7J0Y202  N/A   N/A   N/A       
+TOR0080-0378-05-04  mc00-tor0080  335      10.90.105.24   Up 427d:18h:33m:41s         10.90.104.21  0.0.0.0     90:4c:81:ce:30:d2  CNG7J0Y1W9  N/A   N/A   N/A       
+TOR0080-0379-05-00  mc00-tor0080  335      10.90.105.145  Up 427d:18h:33m:11s         10.90.104.21  0.0.0.0     90:4c:81:ce:32:30  CNG7J0Y1Y0  N/A   N/A   N/A       
+TOR0080-0381-05-08  mc00-tor0080  335      10.90.105.37   Up 427d:18h:33m:26s         10.90.104.21  0.0.0.0     90:4c:81:ce:30:a0  CNG7J0Y1W3  N/A   N/A   N/A       
+TOR0080-0382-05-02  mc00-tor0080  335      10.90.105.147  Up 427d:18h:32m:18s         10.90.104.21  0.0.0.0     90:4c:81:ce:30:40  CNG7J0Y23X  N/A   N/A   N/A       
+TOR0080-0384-05-20  mc00-tor0080  335      10.90.105.51   Up 427d:18h:34m:19s         10.90.104.21  0.0.0.0     90:4c:81:ce:2f:48  CNG7J0Y1W2  N/A   N/A   N/A       
+TOR0080-0400-05-04  mc00-tor0080  335      10.90.105.108  Up 383d:3h:51m:14s          10.90.104.21  0.0.0.0     90:4c:81:ce:46:a8  CNG8J0Y07Y  N/A   N/A   N/A       
+TOR0080-0400-05-08  mc00-tor0080  335      10.90.105.87   Up 383d:3h:52m:38s          10.90.104.21  0.0.0.0     a8:bd:27:c6:fa:e0  CND0J0Y0VX  N/A   N/A   N/A       
+TOR0080-0400-05-12  mc00-tor0080  335      10.90.105.96   Up 383d:3h:51m:47s          10.90.104.21  0.0.0.0     20:a6:cd:cd:e4:66  CNDWJ0Y025  N/A   N/A   N/A       
+TOR0080-0400-05-14  mc00-tor0080  335      10.90.105.78   Up 383d:3h:51m:23s          10.90.104.21  0.0.0.0     20:a6:cd:ce:9a:64  CNF1J0Y2F1  N/A   N/A   N/A       
+TOR0080-0400-05-16  mc00-tor0080  335      10.90.105.126  Up 383d:3h:50m:32s          10.90.104.21  0.0.0.0     20:a6:cd:ce:99:d6  CNF1J0Y2BR  N/A   N/A   N/A       
+TOR0080-0400-05-36  mc00-tor0080  335      10.90.105.123  Up 383d:3h:52m:24s          10.90.104.21  0.0.0.0     90:4c:81:ce:37:6c  CNG7J0Y1WM  N/A   N/A   N/A       
+TOR0080-0400-05-37  mc00-tor0080  335      10.90.105.141  Up 383d:3h:52m:10s          10.90.104.21  0.0.0.0     a8:bd:27:c7:35:ac  CNDJJ0Y2WK  N/A   N/A   N/A       
+TOR0080-0400-05-39  mc00-tor0080  335      10.90.105.138  Up 383d:3h:52m:52s          10.90.104.21  0.0.0.0     90:4c:81:ce:44:e0  CNG8J0Y001  N/A   N/A   N/A       
+TOR0080-0400-05-40  mc00-tor0080  335      10.90.105.99   Up 383d:3h:52m:7s           10.90.104.21  0.0.0.0     90:4c:81:ce:2f:5a  CNG7J0Y1YC  N/A   N/A   N/A       
+TOR0080-0400-05-43     mc00-tor0080  335      10.90.105.135  Up 383d:3h:52m:52s          10.90.104.21  0.0.0.0     90:4c:81:ce:44:5e  CNG8J0Y07S  N/A   N/A   N/A       
+TOR0080-0400-06-24     mc00-tor0080  335      10.90.105.75   Up 383d:3h:50m:5s           10.90.104.21  0.0.0.0     a8:bd:27:c7:3a:de  CNDJJ0Y3L0  N/A   N/A   N/A       
+TOR0080-0400-06-26     mc00-tor0080  335      10.90.105.105  Up 383d:3h:53m:26s          10.90.104.21  0.0.0.0     90:4c:81:ce:41:0c  CNG8J0Y04J  N/A   N/A   N/A       
+TOR0080-0400-06-28     mc00-tor0080  335      10.90.105.81   Up 383d:3h:51m:18s          10.90.104.21  0.0.0.0     a8:bd:27:c6:fd:98  CND0J0Y174  N/A   N/A   N/A       
+TOR0080-0400-06-30     mc00-tor0080  335      10.90.105.102  Up 383d:3h:53m:15s          10.90.104.21  0.0.0.0     90:4c:81:ce:41:d6  CNG8J0Y09F  N/A   N/A   N/A       
+TOR0080-0400-06-32     mc00-tor0080  335      10.90.105.72   Up 383d:3h:50m:50s          10.90.104.21  0.0.0.0     20:a6:cd:ce:99:a6  CNF1J0Y29Z  N/A   N/A   N/A       
+TOR0080-0400-06-34     mc00-tor0080  335      10.90.105.132  Up 383d:3h:51m:25s          10.90.104.21  0.0.0.0     a8:bd:27:c6:fb:04  CND0J0Y0WH  N/A   N/A   N/A       
+TOR0080-0400-06-36     mc00-tor0080  335      10.90.105.117  Up 383d:3h:52m:43s          10.90.104.21  0.0.0.0     a8:bd:27:c6:fa:e6  CND0J0Y0W0  N/A   N/A   N/A       
+TOR0080-0400-06-38     mc00-tor0080  335      10.90.105.84   Up 383d:3h:50m:13s          10.90.104.21  0.0.0.0     a8:bd:27:c7:35:66  CNDJJ0Y2VF  N/A   N/A   N/A       
+TOR0080-0400-06-42     mc00-tor0080  335      10.90.105.120  Up 383d:3h:51m:33s          10.90.104.21  0.0.0.0     20:a6:cd:cd:e4:50  CNDWJ0Y01T  N/A   N/A   N/A       
+TOR0080-0400-06-44     mc00-tor0080  335      10.90.105.114  Up 383d:3h:50m:52s          10.90.104.21  0.0.0.0     a8:bd:27:c7:36:10  CNDJJ0Y2Y5  N/A   N/A   N/A       
+TOR0080-0404-05-16     mc00-tor0080  335      10.90.105.9    Up 383d:3h:50m:18s          10.90.104.21  0.0.0.0     70:3a:0e:cd:4d:b4  CNBTJ0Y39Q  N/A   N/A   N/A       
+TOR0080-04BRDRM-05-38  mc00-tor0080  335      10.90.105.129  Up 383d:3h:51m:53s          10.90.104.21  0.0.0.0     a8:bd:27:c7:2a:2e  CNDJJ0Y1C3  N/A   N/A   N/A       
+TOR0080-04HALL-05-08   mc00-tor0080  335      10.90.105.111  Up 383d:3h:50m:22s          10.90.104.21  0.0.0.0     a8:bd:27:c7:22:6c  CNDJJ0Y0B2  N/A   N/A   N/A       
+TOR0080-04LG-05-02     mc00-tor0080  335      10.90.105.90   Up 383d:3h:51m:36s          10.90.104.21  0.0.0.0     a8:bd:27:c7:2f:50  CNDJJ0Y219  N/A   N/A   N/A       
+TOR0080-04LG-05-45     mc00-tor0080  335      10.90.105.48   Up 383d:3h:51m:2s           10.90.104.21  0.0.0.0     70:3a:0e:cd:51:5e  CNBTJ0Y3SV  N/A   N/A   N/A       
+TOR0080-04TA-05-12     mc00-tor0080  335      10.90.105.93   Up 383d:3h:51m:42s          10.90.104.21  0.0.0.0     a8:bd:27:c7:20:ce  CNDJJ0Y03D  N/A   N/A   N/A       
+TOR0080-terrace-05-41  mc00-tor0080  335      10.90.105.21   Up 427d:18h:32m:18s         10.90.104.21  0.0.0.0     90:4c:81:ce:43:b6  CNG8J0Y081  N/A   N/A   N/A       
+
+Flags: U = Unprovisioned; N = Duplicate name; G = No such group; L = Unlicensed
+       I = Inactive; D = Dirty or no config; E = Regulatory Domain Mismatch
+       X = Maintenance Mode; P = PPPoE AP; B = Built-in AP; s = LACP striping
+       R = Remote AP; R- = Remote AP requires Auth; C = Cellular RAP;
+       c = CERT-based RAP; 1 = 802.1x authenticated AP; 2 = Using IKE version 2
+       u = Custom-Cert RAP; S = Standby-mode AP; J = USB cert at AP
+       f = No Spectrum FFT support                
+       i = Indoor; o = Outdoor
+       M = Mesh node; Y = Mesh Recovery
+
+Total APs:50
+
+
+
+---
+
+(mc00-tor0420) #show ap database long
+
+AP Database
+-----------
+Name                Group      AP Type  IP Address   Status               Flags  Switch IP    Standby IP  Wired MAC Address  Serial #    Port  FQLN  Outer IP  User
+----                -----      -------  ----------   ------               -----  ---------    ----------  -----------------  --------    ----  ----  --------  ----
+TOR0420-0005-01-11  wireless1  335      10.91.45.45  Up 440d:21h:47m:43s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4d:ea  CNBTJ0Y3BL  N/A   N/A   N/A       
+TOR0420-0018-01-10  wireless1  335      10.91.45.22  Up 440d:21h:49m:36s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4f:4a  CNBTJ0Y3J8  N/A   N/A   N/A       
+TOR0420-0021-01-08  wireless1  335      10.91.45.4   Up 358d:4h:20m:18s          10.91.44.22  0.0.0.0     70:3a:0e:cd:45:8a  CNBTJ0Y270  N/A   N/A   N/A       
+TOR0420-0021-01-09  wireless1  335      10.91.45.49  Up 440d:21h:48m:3s          10.91.44.22  0.0.0.0     70:3a:0e:cd:45:d4  CNBTJ0Y286  N/A   N/A   N/A       
+TOR0420-0021-01-12  wireless1  335      10.91.45.8   Up 440d:21h:47m:54s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4e:2a  CNBTJ0Y3CM  N/A   N/A   N/A       
+TOR0420-0021-01-13  wireless1  335      10.91.45.13  Up 440d:21h:47m:47s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4d:d0  CNBTJ0Y3B5  N/A   N/A   N/A       
+TOR0420-0025-01-06  wireless1  335      10.91.45.29  Up 440d:21h:48m:7s          10.91.44.22  0.0.0.0     70:3a:0e:cd:46:38  CNBTJ0Y29T  N/A   N/A   N/A       
+TOR0420-0029-01-05  wireless1  335      10.91.45.41  Up 440d:21h:50m:16s         10.91.44.22  0.0.0.0     70:3a:0e:cd:46:e4  CNBTJ0Y2DL  N/A   N/A   N/A       
+TOR0420-0030-01-04  wireless1  335      10.91.45.31  Up 440d:21h:48m:4s          10.91.44.22  0.0.0.0     70:3a:0e:cd:48:54  CNBTJ0Y2LJ  N/A   N/A   N/A       
+TOR0420-0032-01-03  wireless1  335      10.91.45.27  Up 440d:21h:47m:48s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4a:02  CNBTJ0Y2TG  N/A   N/A   N/A       
+TOR0420-0033-01-00  wireless1  335      10.91.45.14  Up 440d:21h:50m:5s          10.91.44.22  0.0.0.0     70:3a:0e:cd:48:a8  CNBTJ0Y2MW  N/A   N/A   N/A       
+TOR0420-0048-01-07  wireless1  335      10.91.45.17  Up 440d:21h:48m:1s          10.91.44.22  0.0.0.0     70:3a:0e:cd:45:9e  CNBTJ0Y27B  N/A   N/A   N/A       
+TOR0420-0050-01-02  wireless1  335      10.91.45.33  Up 440d:21h:47m:59s         10.91.44.22  0.0.0.0     70:3a:0e:cd:48:00  CNBTJ0Y2K5  N/A   N/A   N/A       
+TOR0420-0113-01-16  wireless1  335      10.91.45.23  Up 440d:21h:48m:13s         10.91.44.22  0.0.0.0     70:3a:0e:cd:45:a6  CNBTJ0Y27G  N/A   N/A   N/A       
+TOR0420-0113-01-17  wireless1  335      10.91.45.54  Up 206d:23h:19m:54s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4a:a6  CNBTJ0Y2X3  N/A   N/A   N/A       
+TOR0420-0114-01-00  wireless1  335      10.91.45.40  Up 440d:21h:47m:39s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4e:c2  CNBTJ0Y3G2  N/A   N/A   N/A       
+TOR0420-0116-01-15  wireless1  335      10.91.45.46  Up 440d:21h:47m:57s         10.91.44.22  0.0.0.0     70:3a:0e:cd:46:b8  CNBTJ0Y2CW  N/A   N/A   N/A       
+TOR0420-0118-01-13  wireless1  335      10.91.45.3   Up 440d:21h:47m:45s         10.91.44.22  0.0.0.0     70:3a:0e:cd:45:b6  CNBTJ0Y27Q  N/A   N/A   N/A       
+TOR0420-0119-01-11  wireless1  335      10.91.45.10  Up 440d:21h:48m:12s         10.91.44.22  0.0.0.0     70:3a:0e:cd:48:4c  CNBTJ0Y2LD  N/A   N/A   N/A       
+TOR0420-0120-01-06  wireless1  335      10.91.45.5   Up 440d:21h:48m:0s          10.91.44.22  0.0.0.0     70:3a:0e:cd:4f:ae  CNBTJ0Y3KW  N/A   N/A   N/A       
+TOR0420-0122-01-03  wireless1  335      10.91.45.6   Up 440d:21h:48m:13s         10.91.44.22  0.0.0.0     70:3a:0e:cd:50:02  CNBTJ0Y3M7  N/A   N/A   N/A       
+TOR0420-0123-01-10  wireless1  335      10.91.45.9   Up 440d:21h:47m:57s         10.91.44.22  0.0.0.0     70:3a:0e:cd:50:0a  CNBTJ0Y3MC  N/A   N/A   N/A       
+TOR0420-0126-01-01  wireless1  335      10.91.45.43  Up 440d:21h:43m:16s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4f:ee  CNBTJ0Y3LX  N/A   N/A   N/A       
+TOR0420-0127-01-04  wireless1  335      10.91.45.16  Up 440d:21h:48m:3s          10.91.44.22  0.0.0.0     70:3a:0e:cd:50:3a  CNBTJ0Y3N4  N/A   N/A   N/A       
+TOR0420-0128-01-08  wireless1  335      10.91.45.37  Up 440d:21h:48m:7s          10.91.44.22  0.0.0.0     70:3a:0e:cd:4f:b2  CNBTJ0Y3KY  N/A   N/A   N/A       
+TOR0420-0129-01-14  wireless1  335      10.91.45.42  Up 440d:21h:48m:5s          10.91.44.22  0.0.0.0     70:3a:0e:cd:45:98  CNBTJ0Y277  N/A   N/A   N/A       
+TOR0420-0132-01-07  wireless1  335      10.91.45.26  Up 440d:21h:47m:32s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4f:dc  CNBTJ0Y3LM  N/A   N/A   N/A       
+TOR0420-0132-01-09  wireless1  335      10.91.45.36  Up 440d:21h:49m:46s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4f:d8  CNBTJ0Y3LK  N/A   N/A   N/A       
+TOR0420-0137-01-02  wireless1  335      10.91.45.30  Up 440d:21h:48m:15s         10.91.44.22  0.0.0.0     70:3a:0e:cd:50:08  CNBTJ0Y3MB  N/A   N/A   N/A       
+TOR0420-0137-01-05  wireless1  335      10.91.45.44  Up 440d:21h:47m:43s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4f:da  CNBTJ0Y3LL  N/A   N/A   N/A       
+TOR0420-0147-01-12  wireless1  335      10.91.45.21  Up 440d:21h:47m:59s         10.91.44.22  0.0.0.0     70:3a:0e:cd:45:70  CNBTJ0Y26L  N/A   N/A   N/A       
+TOR0420-0209-01-11  wireless1  335      10.91.45.47  Up 440d:21h:47m:58s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4a:ce  CNBTJ0Y2XR  N/A   N/A   N/A       
+TOR0420-0210-01-13     wireless1  335      10.91.45.38  Up 440d:21h:48m:10s         10.91.44.22  0.0.0.0     70:3a:0e:cd:45:64  CNBTJ0Y26D  N/A   N/A   N/A       
+TOR0420-0210-01-14     wireless1  335      10.91.45.35  Up 440d:21h:45m:53s         10.91.44.22  0.0.0.0     70:3a:0e:cd:45:74  CNBTJ0Y26N  N/A   N/A   N/A       
+TOR0420-0211-01-16     wireless1  335      10.91.45.20  Up 440d:21h:43m:36s         10.91.44.22  0.0.0.0     70:3a:0e:cd:51:76  CNBTJ0Y3T7  N/A   N/A   N/A       
+TOR0420-0221-01-10     wireless1  335      10.91.45.1   Up 440d:21h:48m:1s          10.91.44.22  0.0.0.0     70:3a:0e:cd:48:36  CNBTJ0Y2L1  N/A   N/A   N/A       
+TOR0420-0223-01-08     wireless1  335      10.91.45.25  Up 440d:21h:46m:25s         10.91.44.22  0.0.0.0     70:3a:0e:cd:48:46  CNBTJ0Y2L9  N/A   N/A   N/A       
+TOR0420-0225-01-07     wireless1  335      10.91.45.7   Up 440d:21h:47m:45s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4a:1a  CNBTJ0Y2TV  N/A   N/A   N/A       
+TOR0420-0227-01-15     wireless1  335      10.91.45.32  Up 440d:21h:48m:2s          10.91.44.22  0.0.0.0     70:3a:0e:cd:45:ae  CNBTJ0Y27L  N/A   N/A   N/A       
+TOR0420-0228-01-18     wireless1  335      10.91.45.11  Up 440d:21h:48m:3s          10.91.44.22  0.0.0.0     70:3a:0e:cd:51:c2  CNBTJ0Y3VG  N/A   N/A   N/A       
+TOR0420-0230-01-04     wireless1  335      10.91.45.2   Up 440d:21h:47m:43s         10.91.44.22  0.0.0.0     70:3a:0e:cd:47:d2  CNBTJ0Y2JF  N/A   N/A   N/A       
+TOR0420-0234-01-00     wireless1  335      10.91.45.50  Up 440d:21h:45m:28s         10.91.44.22  0.0.0.0     70:3a:0e:cd:45:42  CNBTJ0Y25V  N/A   N/A   N/A       
+TOR0420-0234-01-17     wireless1  335      10.91.45.18  Up 440d:21h:45m:45s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4e:32  CNBTJ0Y3CR  N/A   N/A   N/A       
+TOR0420-0243-01-03     wireless1  335      10.91.45.24  Up 440d:21h:48m:11s         10.91.44.22  0.0.0.0     70:3a:0e:cd:45:4c  CNBTJ0Y260  N/A   N/A   N/A       
+TOR0420-0243-01-05     wireless1  335      10.91.45.19  Up 440d:21h:47m:35s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4b:f0  CNBTJ0Y32F  N/A   N/A   N/A       
+TOR0420-0247-01-01     wireless1  335      10.91.45.0   Up 440d:21h:47m:52s         10.91.44.22  0.0.0.0     70:3a:0e:cd:48:50  CNBTJ0Y2LG  N/A   N/A   N/A       
+TOR0420-0247-01-02     wireless1  335      10.91.45.48  Up 440d:21h:50m:0s          10.91.44.22  0.0.0.0     70:3a:0e:cd:45:60  CNBTJ0Y26B  N/A   N/A   N/A       
+TOR0420-0256-01-06     wireless1  335      10.91.45.39  Up 440d:21h:46m:33s         10.91.44.22  0.0.0.0     70:3a:0e:cd:4b:38  CNBTJ0Y2ZG  N/A   N/A   N/A       
+TOR0420-0270-01-12     wireless1  335      10.91.45.12  Up 440d:21h:47m:42s         10.91.44.22  0.0.0.0     70:3a:0e:cd:47:e2  CNBTJ0Y2JP  N/A   N/A   N/A       
+TOR0420-052-01-01      wireless1  335      10.91.45.28  Up 440d:21h:48m:3s          10.91.44.22  0.0.0.0     70:3a:0e:cd:48:22  CNBTJ0Y2KQ  N/A   N/A   N/A       
+TOR0420-terrace-01-09  wireless1  324      10.91.45.15  Up 440d:21h:48m:38s  o      10.91.44.22  0.0.0.0     40:e3:d6:cd:a8:b6  DD0042898   N/A   N/A   N/A       
+
+Flags: U = Unprovisioned; N = Duplicate name; G = No such group; L = Unlicensed
+       I = Inactive; D = Dirty or no config; E = Regulatory Domain Mismatch
+       X = Maintenance Mode; P = PPPoE AP; B = Built-in AP; s = LACP striping
+       R = Remote AP; R- = Remote AP requires Auth; C = Cellular RAP;
+       c = CERT-based RAP; 1 = 802.1x authenticated AP; 2 = Using IKE version 2
+       u = Custom-Cert RAP; S = Standby-mode AP; J = USB cert at AP
+       f = No Spectrum FFT support
+       i = Indoor; o = Outdoor
+       M = Mesh node; Y = Mesh Recovery
+
+Total APs:51
