@@ -1,0 +1,101 @@
+**Requiring  an inout**
+<form action="/example.html" method="POST">
+  <label for="allergies">Do you have any dietary restrictions?</label>
+  <br>
+  <input id="allergies" name="allergies" type="text" required>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+
+**index**
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Number Guessing</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+  </head>
+  <body>
+    <section class="overlay">
+      <h1>Guess the right number!</h1>
+      <form action="check.html" method="GET">
+        <!--Add a required attribute to the input element-->
+        <label for="guess">Enter a number between 1-10:</label>
+        <br>
+        <input type="number" name="guess" id="guess" required>
+        <br>
+        <input type="submit" id="submission" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>
+
+**check.html**
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Required</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+    <script type="text/javascript" src="numCheck.js" defer></script>
+  </head>
+  <body>
+    <section class="overlay">
+      <h1 id="check"></h1>
+      <a href="index.html">Go back</a>
+    </section>
+  </body>
+</html>
+
+**numCheck.js**
+const check = document.getElementById('check');
+const guess = new URLSearchParams(window.location.search);
+const num = guess.get('guess');
+// const randomNum = Math.floor(Math.random() * 10) + 1;
+
+if(num === "3"){
+  check.innerHTML = 'You guessed correctly!';
+} else {
+  check.innerHTML = `Try again...`;
+}
+
+
+**style.css**
+body {
+  background-color: #59CD90;
+  color: #3FA7D6;
+  font-family: Arial;
+  padding-bottom: 20%;
+}
+
+form {
+  line-height: 25px;
+}
+
+h1 {
+  font-family: Spicy Rice, Arial;
+  font-size: 4em;
+  overflow: break;
+}
+
+.overlay {
+  width: 80%;
+  min-width: 30%;
+  margin: 3% auto;
+  display: block;
+  padding: 2%;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+  text-align: center;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
