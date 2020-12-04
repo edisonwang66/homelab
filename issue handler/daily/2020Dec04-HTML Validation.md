@@ -1,4 +1,4 @@
-**Requiring  an inout**
+**Requiring  an input**
 <form action="/example.html" method="POST">
   <label for="allergies">Do you have any dietary restrictions?</label>
   <br>
@@ -99,3 +99,34 @@ h1 {
     font-size: 3.5em;
   }
 }
+
+
+---
+
+**set min and max**
+<form action="/example.html" method="POST">
+  <label for="guests">Enter # of guests:</label>
+  <input id="guests" name="guests" type="number" min="1" max="4">
+  <input type="submit" value="Submit">
+</form>
+
+
+---
+
+**checking text length**
+<form action="/example.html" method="POST">
+  <label for="summary">Summarize your feelings in less than 250 characters</label>
+  <input id="summary" name="summary" type="text" minlength="5" maxlength="250" required>
+  <input type="submit" value="Submit">
+</form>
+
+
+**matching a pattern**
+
+We could use the regex: [0-9]{14,16} which checks that the user provided only numbers and that they entered at least 14 digits and at most 16 digits.
+<form action="/example.html" method="POST">
+  <label for="payment">Credit Card Number (no spaces):</label>
+  <br>
+  <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+  <input type="submit" value="Submit">
+</form>
