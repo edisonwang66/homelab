@@ -130,3 +130,95 @@ We could use the regex: [0-9]{14,16} which checks that the user provided only nu
   <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
   <input type="submit" value="Submit">
 </form>
+
+**index**
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  </head>
+  <body>
+    <section class="overlay">
+			<h1>Sign Up</h1>
+      <p>Create an account:</p>
+      <form action="submission.html" method="GET">
+        <label for="username">Username:</label>
+        <br>
+				<!--Add the pattern attribute to the input below-->
+				<input id="username" name="username" type="text" required minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+">
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+				<input id="pw" name="pw" type="password" required minlength="8" maxlength="15">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>
+
+
+**submission.html**
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Required</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <script type="text/javascript" src="login.js" defer></script>
+  </head>
+  <body>
+    <section class="overlay">
+      <h1 id="message"></h1>
+      <a href="index.html">Go back</a>
+    </section>
+  </body>
+</html>
+
+
+**login.js**
+const message = document.getElementById('message');
+const param = new URLSearchParams(window.location.search);
+const username = param.get('username');
+const pw = param.get('pw');
+
+if(username.toLowerCase() === 'codecademy' && pw === 'ilovecoding'){
+  message.innerHTML = 'We love coding too!';
+} else if(!username || !pw){
+  message.innerHTML = 'Add some client-side validation!';
+} else {
+  message.innerHTML = 'Hurray for client-side validation!';
+}
+
+
+**style.css**
+body {
+  background-color: #59CD90;
+  color: #3FA7D6;
+  font-family: "Fjalla One", Arial;
+}
+
+form {
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 3em;
+  overflow: break;
+}
+
+.overlay {
+  width: 80%;
+  min-width: 30%;
+  margin: 3% auto;
+  display: block;
+  padding: 2%;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+  text-align: center;
+}
