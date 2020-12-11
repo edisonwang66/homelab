@@ -23,6 +23,11 @@ vpn user
 
 Hi Brian, thanks for reaching out.  None of our network equipment is currently alarming for temperature.
 
+https://discuss.codecademy.com/
+https://discuss.codecademy.com/c/project/1833
+
+
+
 
 const plantNeedsWater = day => day === 'Wednesday' ? true : false;
 
