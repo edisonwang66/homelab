@@ -21,6 +21,9 @@ outline vpn
 https://groups.google.com/a/shopify.com/g/vpn-users
 vpn user
 
+**checklist project**
+https://docs.google.com/spreadsheets/d/16yJ7rroS5oYivgVEwOLxi9stQGv9ctKkKEnQIgTcZ8o/edit#gid=0
+
 Hi Brian, thanks for reaching out.  None of our network equipment is currently alarming for temperature.
 
 https://discuss.codecademy.com/
