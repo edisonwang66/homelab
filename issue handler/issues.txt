@@ -1,3 +1,6 @@
+This is a great time to reveal that the network team now has a phone number!  More info coming soon.
+(613) 688-3628
+
 that’s correct. It’s very hard to replicate this issue as it doesn’t happen often and not everyone experience this problem, so I won’t be opening a ticket to Aruba unless it really becomes something that cause issues to larger groups. I’m aware that this is happening and it’s good that people provide the feedback, but aside of that, there is no much we can do more than asking to follow that same procedure you explained above
 
 /root/bin/github_pull.sh on 10.65.57.110 to make change come effect immediately.  "./github_sh"
