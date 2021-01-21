@@ -1,3 +1,6 @@
+PYNET
+https://github.com/ktbyers/pynet/tree/master/learning_python
+
 This is a great time to reveal that the network team now has a phone number!  More info coming soon.
 (613) 688-3628
 
