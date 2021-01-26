@@ -1,5 +1,7 @@
 This the website we talked about on the last stand up meeting: https://pynet.twb-tech.com/
 
+resize vm disk space:  https://github.com/Shopify/shana/blob/master/docs/resizing_vm_virtual_disk.md
+
 Example:
 
 a = 1
