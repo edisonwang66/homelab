@@ -1,3 +1,6 @@
+$ ln -s original_file slink.lnk
+$ ls -il
+
 https://github.com/Shopify/dagobah/tree/main/challenges/01
 
 minipad: novella-ducal-satang2A
