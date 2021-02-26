@@ -1,3 +1,10 @@
+
+kvm-1-234-lab ansible_host=172.16.56.106 # RnD_infraserve
+You can also run the playbooks from your home lab VM if you have one
+datadog-site-agent-1-234-lab ansible_host=172.16.56.97
+The branch with the rnd inventory is rnd
+
+
 to connec to the rnd lab use ottlab.shopify.global
 Use your rnd lab clearpass credential to authenticate
 
