@@ -1,3 +1,39 @@
+- name: capture vlan
+  hosts: aruba_2930m
+  gather_facts: false
+  become: true
+ 
+  tasks:
+    - name: capture show vlan 140
+      aruba_command:
+        commands: 
+          - show vlan 140 | include Untagged
+      register: config
+    
+    - local_action: 
+        module: copy 
+        content: "{{ config.stdout | replace('\\n', '\n') }}" 
+        dest: showvlan.cfg
+    
+    - set_fact:
+        intf: |
+          {{config.stdout_lines[0] | map('regex_findall','([0-9]/[0-9]+)') | map('join') | list }}
+    
+    - name: configure PoE on ports
+      aruba_config:
+        lines:
+          - power-over-ethernet critical
+        parents: interface {{ item }}
+      loop:
+        "{{ intf }}"
+
+    - debug:
+        #var: intf[0]
+        msg: "{{ item }}"
+      loop:  
+        "{{ intf }}"
+
+
 edison@dhcp-1-67:~$ grep -hnr -A16 -B2 "10.67.108.126" /var/lib/dhcp/dhcpd.leases
 4799-  client-hostname "OTT1258-C3-02-03";
 4800-}
