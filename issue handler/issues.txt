@@ -1,3 +1,21 @@
+df = pd.DataFrame([
+  ['January', 100, 100, 23, 100],
+  ['February', 51, 45, 145, 45],
+  ['March', 81, 96, 65, 96],
+  ['April', 80, 80, 54, 180],
+  ['May', 51, 54, 54, 154],
+  ['June', 112, 109, 79, 129]],
+  columns=['month', 'clinic_east',
+           'clinic_north', 'clinic_south',
+           'clinic_west'])
+
+march = df.iloc[2]
+
+取一排的值
+
+
+
+
 - name: capture vlan
   hosts: aruba_2930m
   gather_facts: false
@@ -26,6 +44,11 @@
         parents: interface {{ item }}
       loop:
         "{{ intf }}"
+    
+    - name: save config
+      aruba_config:
+        lines:
+          - wr mem
 
     - debug:
         #var: intf[0]
@@ -33,6 +56,10 @@
       loop:  
         "{{ intf }}"
 
+    - name: Extract interface ID and put in list "intf"
+      set_fact:
+        intf: |
+          {{vlan140.stdout_lines[0] | map('regex_findall','([A-Z][0-9]+)') | map('join') | list }}
 
 edison@dhcp-1-67:~$ grep -hnr -A16 -B2 "10.67.108.126" /var/lib/dhcp/dhcpd.leases
 4799-  client-hostname "OTT1258-C3-02-03";
