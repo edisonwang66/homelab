@@ -9,7 +9,7 @@ df = pd.DataFrame([
            'clinic_north', 'clinic_south',
            'clinic_west'])
 
-march = df.iloc[2]  orders.iloc[3:7]  orders.iloc[:4]
+march = df.iloc[2]  orders.iloc[3:7]  orders.iloc[:4]  orders.iloc[-3:]
 
 
 取一排的值
