@@ -3,6 +3,9 @@ df.head(10)   (firts 10 rows)
 df['shoe_type'] = df.shoe_type.apply(string.lower)   (make all small letters in 'shoe_type' column)
 df['in_stock'] = df.shoe_material.apply(lambda x: False if x == 'fabric' else True)     ( add a column 'in_stock' if value of 'shoe_material' is fabric, value of 'in_stock' is False, else is True)
 
+df['newColumn'] = [1, 2, 3, 4]    df['In Stock?'] = True     df['In Stock?'] = 'Yes'   df['Margin'] = df.Price - df['Cost to Manufacture']
+
+
 **add a column 'description' with value from other columns**
 df['description'] = df.apply(lambda row: "{} {} bought {} {} {}"\ 
     .format(row.first_name,
@@ -44,6 +47,13 @@ import pandas as pd
 orders = pd.read_csv('shoefly.csv')
 
 取一排的值
+
+
+from string import upper
+df['Name'] = df.Name.apply(upper) lower  (把名字这一栏搞成大写)
+
+mylambda = lambda x: (x * 2) + 3
+print(mylambda(5))
 
 
 
