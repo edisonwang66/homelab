@@ -1,3 +1,10 @@
+$ansible --list-hosts all
+  ansible.cfg
+  [defaults]
+  hostfile = ./hosts
+  host_key_checking = false
+  timeout = 5
+
 import string    (so we can use string.lower)
 df.head(10)   (firts 10 rows)
 df['shoe_type'] = df.shoe_type.apply(string.lower)   (make all small letters in 'shoe_type' column)
@@ -55,7 +62,14 @@ df['Name'] = df.Name.apply(upper) lower  (把名字这一栏搞成大写)
 mylambda = lambda x: (x * 2) + 3
 print(mylambda(5))
 
+stringlambda = lambda x: x.lower()
+print(stringlambda("Oh Hi Mark!"))
 
+mylambda = lambda x: x[0] + x[-1]
+print(mylambda('This is a string'))
+
+lambda x: [OUTCOME IF TRUE] if [CONDITIONAL] else [OUTCOME IF FALSE]
+myfunction = lambda x: 40 + (x - 40) * 1.50 if x > 40 else x
 
 
 - name: capture vlan
