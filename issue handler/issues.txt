@@ -5,7 +5,19 @@ $ansible --list-hosts all
   host_key_checking = false
   timeout = 5
   
+---
+web scraping
+from preprocess import turtles
+
+import requests   requests库
+from bs4 import BeautifulSoup   这个库可以对html的原始信息抽取我们感兴趣的部分，然后用pandas处理
  
+webpage = requests.get('https://www.codecademy.com/articles/http-requests')
+print(webpage.text)
+webpage = webpage_response.content
+---
+
+
   
 df.columns = ['ID', 'Title', 'Category', 'Year Released', 'Rating']  修改列的名字
 
