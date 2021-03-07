@@ -15,6 +15,11 @@ from bs4 import BeautifulSoup   这个库可以对html的原始信息抽取我�
 webpage = requests.get('https://www.codecademy.com/articles/http-requests')
 print(webpage.text)
 webpage = webpage_response.content
+
+soup的用法如下，把html的文件转成pandas可以处理的dataframe
+soup = BeautifulSoup("rainbow.html", "html.parser")
+webpage = requests.get("http://rainbow.com/rainbow.html", "html.parser")
+soup = BeautifulSoup(webpage.content)
 ---
 
 
