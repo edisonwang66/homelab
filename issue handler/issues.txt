@@ -23,7 +23,13 @@ df['description'] = df.apply(lambda row: "{} {} bought {} {} {}"\
     axis=1)
 df.head(10)
 
+lambda x: [OUTCOME IF TRUE] if [CONDITIONAL] else [OUTCOME IF FALSE]
+myfunction = lambda x: 40 + (x - 40) * 1.50 if x > 40 else x
 
+df['Email Provider'] = df.Email.apply(
+    lambda x: x.split('@')[-1]
+    )
+把邮箱后缀取出来 放到新的column email provider里面
 
 
 df = pd.DataFrame([
