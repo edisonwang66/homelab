@@ -18,8 +18,25 @@ webpage = webpage_response.content
 
 soup的用法如下，把html的文件转成pandas可以处理的dataframe
 soup = BeautifulSoup("rainbow.html", "html.parser")
-webpage = requests.get("http://rainbow.com/rainbow.html", "html.parser")
+webpage = requests.get("http://rainbow.com/rainbow.html", "html.parser")     可选项还有 "lxml" and "html5lib"
 soup = BeautifulSoup(webpage.content)
+
+webpage_response = requests.get('https://content.codecademy.com/courses/beautifulsoup/shellter.html')
+webpage = webpage_response.content
+soup = BeautifulSoup(webpage, "html.parser")
+
+
+soup = BeautifulSoup('<div id="example">An example div</div><p>An example p tag</p>')
+print(soup.div)   打印第一个含有div的tag内容
+--> <div id="example">An example div</div>
+
+print(soup.div.name)
+print(soup.div.attrs)
+print(soup.div.string)
+--->
+div
+{'id': 'example'}
+An example div
 ---
 
 
