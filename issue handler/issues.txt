@@ -5,6 +5,11 @@ $ansible --list-hosts all
   host_key_checking = false
   timeout = 5
   
+转到当前工作的feature branch后, 先用v0.49 merge到当前feature branch，这样当前feature branch只体现和v0.49版的不同
+$git commit
+$git merge v0.49
+$git push
+
 ---
 web scraping
 from preprocess import turtles
