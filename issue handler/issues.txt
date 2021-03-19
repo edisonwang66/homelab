@@ -1,3 +1,32 @@
+The most commonly used magic variables are hostvars, groups, group_names, and inventory_hostname. With hostvars, you can access variables defined for any host in the play, at any point in a playbook. You can access Ansible facts using the hostvars variable too, but only after you have gathered (or cached) facts.
+
+If you want to configure your database server using the value of a ‘fact’ from another node, or the value of an inventory variable assigned to another node, you can use hostvars in a template or on an action line:
+{{ hostvars['test.example.com']['ansible_facts']['distribution'] }}
+
+With groups, a list of all the groups (and hosts) in the inventory, you can enumerate all hosts within a group. For example:
+{% for host in groups['app_servers'] %}
+   # something that applies to all app servers.
+{% endfor %}
+
+You can use groups and hostvars together to find all the IP addresses in a group.
+{% for host in groups['app_servers'] %}
+   {{ hostvars[host]['ansible_facts']['eth0']['ipv4']['address'] }}
+{% endfor %}
+
+
+You can use this approach to point a frontend proxy server to all the hosts in your app servers group, to set up the correct firewall rules between servers, and so on. You must either cache facts or gather facts for those hosts before the task that fills out the template.
+
+With group_names, a list (array) of all the groups the current host is in, you can create templated files that vary based on the group membership (or role) of the host:
+{% if 'webserver' in group_names %}
+   # some part of a configuration file that only applies to webservers
+{% endif %}
+
+
+You can use the magic variable inventory_hostname, the name of the host as configured in your inventory, as an alternative to ansible_hostname when fact-gathering is disabled. If you have a long FQDN, you can use inventory_hostname_short, which contains the part up to the first period, without the rest of the domain.
+
+
+
+
 $ln -s source_file symbolic_link
 
 $ansible --list-hosts all
