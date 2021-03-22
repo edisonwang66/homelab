@@ -1,3 +1,6 @@
+https://10.66.56.34/tips/tipsLogin.action#tipsDashboard.action
+
+
 The most commonly used magic variables are hostvars, groups, group_names, and inventory_hostname. With hostvars, you can access variables defined for any host in the play, at any point in a playbook. You can access Ansible facts using the hostvars variable too, but only after you have gathered (or cached) facts.
 
 If you want to configure your database server using the value of a ‘fact’ from another node, or the value of an inventory variable assigned to another node, you can use hostvars in a template or on an action line:
