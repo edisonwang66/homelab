@@ -2,7 +2,7 @@ CPPM VM LOGIN: appadmin/eTIPS123
 https://ip/tips/
 
 RDP to 10.66.58.170 and open up the app Virtual Machine Manager.
-Credentials are in 1Password.
+Credentials are in 1Password. it-network/it-network
 
 
 To find the VM you’re looking for just double click the OTT234 kvm’s, the VMs will be listed right away
