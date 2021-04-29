@@ -1,3 +1,5 @@
+ansible-inventory --list
+
 # ssh -o 'StrictHostKeyChecking no' user@host
 
 https://github.com/Shopify/net/blob/master/Guides/PULL_REQUEST_TEMPLATE/configuration_backup_update.md
