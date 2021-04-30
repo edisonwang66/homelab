@@ -1,3 +1,5 @@
+grep -iRl "void" ./
+
 ansible core -m junos_command -a 'commands="show version"' -c network_cli -u edison --limit c01
 ansible all -m ping -c network_cli -u edison
 ansible-inventory --list
