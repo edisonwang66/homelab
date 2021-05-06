@@ -1,3 +1,5 @@
+MIB search path: /Users/lejianwang/.snmp/mibs:/usr/local/share/snmp/mibs:/usr/share/snmp/mibs
+
 grep -iRl "void" ./
 
 ansible core -m junos_command -a 'commands="show version"' -c network_cli -u edison --limit c01
