@@ -1,3 +1,5 @@
+scp root@10.93.56.10:/tmp/report.txt.gz .
+
 MIB search path: /Users/lejianwang/.snmp/mibs:/usr/local/share/snmp/mibs:/usr/share/snmp/mibs
 
 grep -iRl "void" ./
