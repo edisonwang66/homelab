@@ -1,3 +1,33 @@
+
+There's people in the #ubnt channel that have experience setting up a point to point wireless bridge, that's one way you can extend your coverage. You can also get someone to run an outdoor rated network drop and forget about the wireless bridge.
+
+Do you have Coax (TV) cable in you house? If you have one coax outlet close to your router and another coax outlet in your office, that might be the solution.
+
+
+Hey Jeff, unfortunately we only offer the Google Nest WiFi to help resolve network issues on your principal residence. You could use League for purchasing one for your Cottage.
+There’s people in the #ubnt channel that have experience setting up a point to point wireless bridge, that’s one way you can extend your coverage. You can also get someone to run an outdoor rated network drop and forget about the wireless bridge.
+
+We can help with that. A few questions and suggestions:
+What type of wireless system do you have currently?
+What’s are your ISP’s provided speeds? Ex: 50/10, 250/20 (Up/Down) in Mbps
+How is this issue you’re having impacting your work?
+As a best practice, it’s recommended to be hardwired with an ethernet cable to your workstation. You can order a USB-C ethernet dongle and ethernet cable from #help-it
+It’s important to note that wireless performance !=  performance accessing resources on the internet.  Reaching www.speedtest.net is not the same as reaching meet.google.com  Therefore, a speed test is not indicative of overall performance reaching resources on the internet.
+If you’re interested in obtaining a Google Nest Wifi, please install 7Signal so that we can monitor the wireless connection on your MacBook for a few days to determine if a Nest Wifi will help.  You can learn more about 7Signal in Kepler.
+The organization ID to input when installing is: shopifyttl328
+7Signal Mobile Eye: https://downloads.7signal.com/eyeq_agents/7signal-Mobile-Eye-Agent-MacOS-1.7.4.31-production-signed.pkg
+:+1:
+1
+
+
+
+
+
+10:17
+If she does, she can buy an adaptor to wire herself directly tot he modem and forget about WiFi
+
+
+
 scp root@10.93.56.10:/tmp/report.txt.gz .
 
 MIB search path: /Users/lejianwang/.snmp/mibs:/usr/local/share/snmp/mibs:/usr/share/snmp/mibs
