@@ -1,3 +1,7 @@
+root@om2216-l:~# snmpwalk -v 3 -l authpriv -u sh0pify -a SHA -A abcd1234 -x AES -X abcd1234 -m ALL -M /usr/share/snmp/mibs localhost .1.3.6.1.4.1.25049.10.19.9.1.1.4 
+
+snmpwalk -v3 -u rey -a SHA -A  hello123 -l authPriv -x AES -X goodbye123 -Pud -m ALL localhost .1.3.6.1
+
 
 There's people in the #ubnt channel that have experience setting up a point to point wireless bridge, that's one way you can extend your coverage. You can also get someone to run an outdoor rated network drop and forget about the wireless bridge.
 
