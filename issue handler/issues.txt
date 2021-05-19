@@ -1,5 +1,8 @@
 scutil --dns | grep 'nameserver\[[0-9]*\]'
 
+
+sudo launchctl stop com.sevensignal.mobileeyeagent and then sudo launchctl start com.sevensignal.mobileeyeagent
+
 root@om2216-l:~# snmpwalk -v 3 -l authpriv -u sh0pify -a SHA -A abcd1234 -x AES -X abcd1234 -m ALL -M /usr/share/snmp/mibs localhost .1.3.6.1.4.1.25049.10.19.9.1.1.4 
 
 snmpwalk -v3 -u rey -a SHA -A  hello123 -l authPriv -x AES -X goodbye123 -Pud -m ALL localhost .1.3.6.1
@@ -24,7 +27,7 @@ The organization ID to input when installing is: shopifyttl328
 7Signal Mobile Eye: https://downloads.7signal.com/eyeq_agents/7signal-Mobile-Eye-Agent-MacOS-1.7.4.31-production-signed.pkg
 :+1:
 1
-
+I know it's not as good as free, but if you ask in #ubnt I know there was someone who runs a business selling unifi equipment with a discount for shopifolk
 
 
 
