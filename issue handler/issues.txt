@@ -1,5 +1,7 @@
 scutil --dns | grep 'nameserver\[[0-9]*\]'
 
+ls /usr/share/snmp/mibs/
+
 https://helpdesk.shopify.io/support/catalog/items/241     google nest wifi
 
 sudo launchctl stop com.sevensignal.mobileeyeagent and then sudo launchctl start com.sevensignal.mobileeyeagent
