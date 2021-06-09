@@ -1,3 +1,6 @@
+A mesh network will help with the loft.  It will not help with the terrace.  As for your parents/grandparents, we can only make suggestions about your network and how it helps you get your work done at Shopify.
+
+
 scutil --dns | grep 'nameserver\[[0-9]*\]'
 
 ls /usr/share/snmp/mibs/
