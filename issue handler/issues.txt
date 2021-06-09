@@ -1,3 +1,6 @@
+12:45
+tcpdump -nni interface_name host dst_address and port port_number
+
 $git reset --hard
 
 OTT234 GSOC security windows machines 10.66.103.21 and .22
